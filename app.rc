@@ -1,0 +1,31 @@
+#include <winresrc.h>
+
+1 ICON "app.ico"
+
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "app.manifest"
+
+// ---------------------------------------------------------------------------
+// Version information (shown in Explorer > Properties > Details)
+// ---------------------------------------------------------------------------
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION      1,1,0,0
+ PRODUCTVERSION   1,1,0,0
+ FILEFLAGSMASK    VS_FFI_FILEFLAGSMASK
+ FILEFLAGS        0
+ FILEOS           VOS_NT_WINDOWS32
+ FILETYPE         VFT_APP
+ FILESUBTYPE      VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"   // Language: English (US), Code page: Unicode
+        BEGIN
+            VALUE "FileDescription",  "Listen to an audio input device\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 0x04B0   // English (US), Unicode
+    END
+END
